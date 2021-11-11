@@ -1,4 +1,4 @@
-package com.bdlz.ride;
+package com.bdlz.model;
 
 public class Ride {
     private final double distance;
