@@ -11,6 +11,10 @@ public class InvoiceSummary {
         this.numOfRides = numberOfRides;
         this.totalFare = totalFare;
     }
+    public InvoiceSummary(int numberOfRides, double totalFare, String type) {
+        this.numOfRides = numberOfRides;
+        this.totalFare = totalFare;
+    }
 
     public InvoiceSummary getInvoiceSummary() {
         this.avgFare = this.totalFare / this.numOfRides;
@@ -29,5 +33,6 @@ public class InvoiceSummary {
     public int hashCode() {
         return Objects.hash(numOfRides, totalFare, avgFare);
     }
+
 
 }
